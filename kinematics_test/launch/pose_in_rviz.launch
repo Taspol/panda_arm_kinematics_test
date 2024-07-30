@@ -1,0 +1,9 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE"
+       value="$(find kinematics_test)/config/rosconsole.config"/>
+    <!-- <remap from="/joint_states" to="/rrr_arm/joint_states"/> -->
+    <node name="pose_in_rviz" pkg="kinematics_test" type="pose_in_rviz"  
+            output="screen">
+    </node>
+
+</launch>

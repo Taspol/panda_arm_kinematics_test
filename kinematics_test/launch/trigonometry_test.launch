@@ -1,0 +1,9 @@
+<launch>
+    <env name="ROSCONSOLE_CONFIG_FILE"
+       value="$(find palm_collector_moveit_cpp)/config/rosconsole.config"/>
+    <remap from="/joint_states" to="/rrr_arm/joint_states"/>
+    <node name="trigonometry_test" pkg="palm_collector_moveit_cpp" type="trigonometry_test"  
+            output="screen">
+    </node>
+
+</launch>
